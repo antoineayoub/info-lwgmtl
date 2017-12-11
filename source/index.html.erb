@@ -2,14 +2,82 @@
 title: Le Wagon - Middleman
 ---
 
-<div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
+<div id="fullpage">
+  <div class="section">
+    <div class="home-content">
+    <%= image_tag "logo_mtl_black.png", width: "600" %>
+    <div class="custom-title">
+      <p class="font-s">One year after we launch</p>
+    </div>
+    </div>
+  </div>
+  <div class="section">
+
+  </div>
+  <div class="section">
+    <div class="main-container">
+      <div class="map-container">
+        <%= partial "map" %>
+      </div>
+      <div class="container-figures">
+        <%= partial "map_figures" %>
+        <%= partial "map_footer" %>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container container-custo">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 yellow-square">
+          <a href="https://www.meetup.com/fr-FR/Le-Wagon-Montreal/" target="_blank">
+            <div class="card-content">
+              <div class="txt-design font-xxl">40</div>
+              <i class="far fa-calendar-check font-xxxl"></i>
+            </div>
+            <p class="font-s" style="padding: 10px 25px 0 25px;">More than 40 free events organized : <strong>coding workshops</strong>, <strong>Wagon Talk</strong> and <strong>DemoDay</strong>.</p>
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 green-square">
+          <div class="txt-design font-xxl text-right">1,800</div>
+          <p class="font-s text-right" style="margin: 0px 0px 10px 60px;">participants in our events</p>
+          <i class="fas fa-laptop font-xxxl"></i>
+        </div>
+        <div class="col-xs-12 col-sm-6 green-square">
+          <div class="txt-design font-xxl">1,050</div>
+          <p class="font-s">members in our Meetup group</p>
+          <div class="text-right">
+            <i class="fas fa-users font-xxxl"></i>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 yellow-square">
+          <a href="https://www.meetup.com/fr-FR/Le-Wagon-Montreal/" target="_blank">
+            <div class="txt-design font-xxl text-right">21k</div>
+            <p class="font-s text-right" style="margin: 0px 0px 10px 120px;">videos viewed on our social media</p>
+            <i class="far fa-play-circle font-xxxl icon-play"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+     <div class="container container-custo">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 yellow-square">
+
+        </div>
+        <div class="col-xs-12 col-sm-6 green-square">
+
+        </div>
+        <div class="col-xs-12 col-sm-6 green-square">
+
+        </div>
+        <div class="col-xs-12 col-sm-6 yellow-square">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+     <%= partial "crew" %>
   </div>
 </div>

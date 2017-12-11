@@ -1,9 +1,11 @@
 // Import Google fonts
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500|Lilita+One|Montserrat:300,400,500,600,700,800");
 
 // Define fonts for body and headers
 $body-font: "Open Sans", "Helvetica", "sans-serif";
 $headers-font: "Raleway", "Helvetica", "sans-serif";
+$lilita-font: "Lilita One", "cursive";
+$montserrat-font: 'Montserrat', "sans-serif";
 
 // To use a font file (.woff) uncomment following lines
 // @font-face {
@@ -13,4 +15,43 @@ $headers-font: "Raleway", "Helvetica", "sans-serif";
 //        font-url('FontFile.woff') format('woff'),
 //        font-url('FontFile.ttf') format('truetype')
 // }
-// $my-font: "Font Name";
+//
+
+@font-face {
+    font-family: 'PeaceSansWebfont';
+    src: url('fonts/PeaceSansWebfont.eot');
+    src: url('fonts/PeaceSansWebfont.eot') format('embedded-opentype'),
+         url('fonts/PeaceSansWebfont.woff2') format('woff2'),
+         url('fonts/PeaceSansWebfont.woff') format('woff'),
+         url('fonts/PeaceSansWebfont.ttf') format('truetype'),
+         url('fonts/PeaceSansWebfont.svg#PeaceSansWebfont') format('svg');
+}
+$peace-font: "PeaceSansWebfont";
+
+.font-xxxl{
+  font-size:100px;
+}
+
+.font-xxl{
+  font-size:75px;
+}
+
+.font-xl{
+  font-size: 60px;
+}
+
+.font-l{
+  font-size: 50px;
+}
+
+.font-m{
+  font-size: 40px;
+}
+
+.font-s{
+  font-size: 25px;
+}
+
+.font-xs{
+  font-size: 20px;
+}
