@@ -6,7 +6,7 @@
 $(document).ready(function() {
 
   $('#fullpage').fullpage({
-    anchors:['firstPage', 'secondPage', 'thirdPage','fourthPage','fiftPage'],
+    anchors:['firstPage', 'secondPage', 'thirdPage','fourthPage'],
     sectionsColor: 'white',
     navigation: true,
     navigationPosition: 'right',
@@ -87,16 +87,16 @@ $(document).ready(function() {
 
       //after leaving section 2
       if(index == 1 && direction =='down'){
-        $('#fun-level').animateNumber({number: 42},4000);
-        $('#batchs').animateNumber({number: 3},1000);
-        $('#hours').animateNumber({number: 1000},7000);
+        $('#fun-level').animateNumber({number: 42},2000);
+        $('#batchs').animateNumber({number: 3},2000);
+        $('#hours').animateNumber({number: 1000},2000);
         $('#apps').animateNumber({number: 13},2000);
       }
 
       else if(index == 3 && direction == 'up'){
-        $('#fun-level').animateNumber({number: 42},4000);
-        $('#batchs').animateNumber({number: 3},1000);
-        $('#hours').animateNumber({number: 1000},7000);
+        $('#fun-level').animateNumber({number: 42},2000);
+        $('#batchs').animateNumber({number: 3},2000);
+        $('#hours').animateNumber({number: 1000},2000);
         $('#apps').animateNumber({number: 13},2000);
       }
     }

@@ -31,14 +31,13 @@ body{
 
 .home-content{
   text-align:center;
-  width: 70%;
+  width: 100%;
   height: 100%;
-  padding-top: 200px;
-  margin: 0 15% 0 15%;
   p {
-    margin-top: 1.5em;
-    text-transform: uppercase;
-    font-family: $peace-font;
+    font-family: 'AvenirBlack';
+    color: white;
+    letter-spacing: -1px;
+    text-shadow: 0px 2px 0px rgba(0,0,0,0.15);
   }
 }
 
@@ -49,21 +48,35 @@ body{
 }
 // MAP
 
+// .map-container{
+//   text-align: center;
+//   z-index: -1;
+// }
+
 .map-container{
-  text-align: center;
-  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  @media (max-width: 768px) {
+    background-image: none !important;
+  }
+  h1{
+    margin-bottom: 0;
+  }
 }
 
 .container-figures{
   position: absolute;
-  top: 0;
-  width: 70%;
-  height: 100%;
-  margin: 0 15% 0 15%;
+  bottom: 15px;
+  width: 100%;
+  @media (max-width: 768px) {
+    position: initial;
+  }
 }
 
 .num-design{
-  font-family: $peace-font;
+  font-family: $peace-font !important;
 }
 
 .txt-design{
@@ -93,10 +106,13 @@ body{
 }
 
 .human-flex{
-  width: 300px;
+  padding: 0 100px 0 100px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
+  @media (max-width: 768px) {
+    padding: 0 35px 0 35px;
+  }
 }
 
 #woman{
@@ -149,11 +165,11 @@ a {
   padding: 30px;
 }
 
-.container-custo{
-  margin: 0;
-  padding:0 15% 0 15%;
-  width: 100%;
-}
+// .container-custo{
+//   margin: 0;
+//   padding:0 15% 0 15%;
+//   width: 100%;
+// }
 .card-content{
   display: flex;
   justify-content: space-around;
@@ -169,14 +185,16 @@ a {
 
 #crew{
   text-align: center;
-  width: 70%;
+  width: 100%;
   height: 100%;
-  margin: 0 15% 0 15%;
+  //margin: 0 15% 0 15%;
   h1{
-    font-family: $peace-font;
-    text-transform: uppercase;
+    font-family: 'AvenirBlack';
     margin-top: 2em;
     margin-bottom: 2em;
+    color: white;
+    letter-spacing: -1px;
+    text-shadow: 0px 2px 0px rgba(0,0,0,0.15);
   }
   div{
     padding-top: 20px;
@@ -189,6 +207,70 @@ a {
     padding-top: 5px;
     font-size: 10px;
     text-transform: uppercase;
-    font-weight: bold;
+    font-family: 'AvenirBlack';
   }
+}
+
+
+
+.posts-index:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: -1001;
+    background-image: linear-gradient(-225deg, #11998e 0%, #38ef7d 100%);
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: skew(0deg, 9deg);
+    transform: skew(0deg, 9deg);
+    opacity: 0.4;
+}
+.posts-index:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: -1000;
+    background-image: linear-gradient(-225deg, #2CF8BD 0%, #2CFABC 45%, #2DE6B3 100%);
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: skew(0deg, -15deg);
+    transform: skew(0deg, -15deg);
+}
+
+.posts-crew:after {
+    content: '';
+    width: 100%;
+    height: 260px;
+    z-index: -1001;
+    background-image: linear-gradient(-225deg, #11998e 0%, #38ef7d 100%);
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: skew(0deg, 9deg);
+    transform: skew(0deg, 9deg);
+    opacity: 0.4;
+
+}
+
+.posts-crew:before {
+    content: '';
+    width: 100%;
+    height: 260px;
+    z-index: -1000;
+    background-image: linear-gradient(-225deg, #2CF8BD 0%, #2CFABC 45%, #2DE6B3 100%);
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: skew(0deg, -15deg);
+    transform: skew(0deg, -15deg);
 }
