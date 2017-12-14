@@ -101,5 +101,19 @@ $(document).ready(function() {
       }
     }
   });
+  // var player = document.querySelector('.js-plyr').plyr;
+  // player.on('ready', function(event) {
+  //   alert("hello")
+  // });
+  document.querySelector('.js-plyr').addEventListener('play', function(event) {
+    var player = event.target.plyr;
+    $( ".posts-video" ).css({ opacity: 0 });
+    $( ".title-video > h1" ).css({ opacity: 0 });
+  });
+  document.querySelector('.js-plyr').addEventListener('pause', function(event) {
+    var player = event.target.plyr;
+    $( ".posts-video" ).css({ opacity: 1 });
+    $( ".title-video > h1" ).css({ opacity: 1 });
+  });
 
 });
