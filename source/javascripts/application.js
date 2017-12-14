@@ -6,7 +6,7 @@
 $(document).ready(function() {
 
   $('#fullpage').fullpage({
-    anchors:['firstPage', 'secondPage', 'thirdPage','fourthPage'],
+    anchors:['home', 'map', 'crew','info','lewagonmtl','contact'],
     sectionsColor: 'white',
     navigation: true,
     navigationPosition: 'right',

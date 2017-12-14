@@ -344,14 +344,15 @@ body{
 
     }
     p{
+      text-shadow: 2px 1px 3px rgba(0,0,0,0.1);
       font-size: 20px;
       font-family: 'AvenirBlack';
     }
     a{
         color: white;
-        text-decoration: underline;
+        text-decoration: none;
         &:hover{
-          color: rgba(0,0,0,0.4);
+          color: rgba(0,0,0,0.8);
         }
       }
   }
