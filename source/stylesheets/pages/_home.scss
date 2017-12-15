@@ -192,6 +192,7 @@ body{
 
 
 .green-square{
+  position:relative;
   background-color: $green;
   color: white;
   padding: 30px;
@@ -200,9 +201,8 @@ body{
     z-index: 2;
   }
   &:hover{
-    background-color: white;
-    a {
-      color: transparent;
+    .green-square-hover{
+      opacity: 1;
     }
   }
   a {
@@ -212,6 +212,19 @@ body{
       text-decoration: none;
     }
   }
+}
+
+.green-square-hover{
+  position: absolute;
+  top:0;
+  bottom:0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
 }
 
 .card-content{
@@ -375,6 +388,11 @@ body{
     position: absolute;
     z-index:3;
     margin-top: 1em;
+  }
+}
+.title-video{
+  @media (max-width: 768px) {
+    opacity: 0;
   }
 }
 
