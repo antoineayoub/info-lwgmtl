@@ -175,9 +175,8 @@ body{
     z-index: 2;
   }
   &:hover{
-    background-color: $green;
-    a {
-      color: transparent;
+    .white-square-hover{
+      opacity: 1;
     }
   }
   a {
@@ -188,7 +187,18 @@ body{
     }
   }
 }
-
+.white-square-hover{
+  position: absolute;
+  top:0;
+  bottom:0;
+  left: 0;
+  right: 0;
+  background-color: $green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
 
 
 .green-square{
