@@ -13,7 +13,7 @@
     <meta property="og:title" content="<%= current_page.data.title %>" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://mtl2017.lewagon.com/" />
-    <meta property="og:image" content="og_img.png" />
+    <meta property="og:image" content="http://mtl2017.lewagon.com/images/og_img.png" />
     <meta property="og:description" content="On célèbre notre première année de vie. 1 an, 3 batch, 42 étudiants venus des quatre coins de la planète pour apprendre à coder avec le Wagon en 9 semaines intensives et amorcer un nouveau chapitre de leur vie." />
     <meta property="og:site_name" content="<%= current_page.data.title %>" />
 
@@ -23,7 +23,7 @@
     <meta name="twitter:title" content="<%= current_page.data.title %>">
     <meta name="twitter:description" content="On célèbre notre première année de vie. 1 an, 3 batch, 42 étudiants venus des quatre coins de la planète pour apprendre à coder avec le Wagon en 9 semaines intensives et amorcer un nouveau chapitre de leur vie.">
     <meta name="twitter:creator" content="@lewagonmontreal">
-    <meta name="twitter:image:src" content="og_img.png">
+    <meta name="twitter:image:src" content="http://mtl2017.lewagon.com/images/og_img.png">
 
     <%= stylesheet_link_tag "application" %>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.css" />
@@ -34,6 +34,15 @@
   </head>
   <body>
     <%= yield %>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111450170-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-111450170-1');
+    </script>
     <script src="https://cdn.plyr.io/2.0.18/plyr.js"></script>
     <script>plyr.setup('.js-plyr');</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/vendors/jquery.easings.min.js"></script>

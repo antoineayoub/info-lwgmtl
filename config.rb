@@ -7,6 +7,9 @@ activate :sprockets
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+set :css_dir, 'stylesheets'
+set :js_dir, 'javascripts'
+set :images_dir, 'images'
 
 configure :build do
   activate :minify_css
@@ -20,3 +23,6 @@ activate :deploy do |deploy|
   deploy.build_before = true
   deploy.deploy_method = :git
 end
+# Use relative URLs
+  activate :relative_assets
+
